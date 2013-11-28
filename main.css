@@ -1,8 +1,21 @@
+body{
+	margin: 0;
+}
 #header{
 	font-size: 30px;
+	margin-left: 10px;
 	text-decoration: underline;
 }
 
 #container{
+	margin-left: 10px;
 	font-size: 20px;
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+	color: #FFF;
+    background-color: #333;
 }

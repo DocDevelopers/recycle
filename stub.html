@@ -9,17 +9,22 @@
 	</head>
 
 	<body>
+		<div id="wrapper">
 		<p id ="header">Welcome to the recycle log<p>
 
 
 		<div id="container"data-bind="foreach:items">
-			<div>
+			<p>
 				The 
 				<span data-bind="text:item"></span> 
 				was recycled on 
-				<span data-bind="text:time"></span> 
-			</div>
+				<span data-bind="text:time"></span>.
+				 The location it was recycled at is
+				<span data-bind="text:address"></span>  
+			</p>
 
+		</div>
+		<footer align="center">DocDevelopers 2013.</footer>
 		</div>
 
 	<script>

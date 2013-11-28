@@ -39,7 +39,7 @@ var testvm = function()
         	//Since we will be getting JSON data then I parse it with the json parser.
             parsed = JSON.parse(request.responseText);
 
-            //Then I put the array of recycled items into my ko array.
+            //Then I put the array of recycled items array into my ko array.
             self.items(parsed.result.recycled);
         }
             
