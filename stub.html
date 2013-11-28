@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stub Code| Francisco Castellanos</title>
+		<script type="text/javascript" src="knockout.js"></script>
+		<script type="text/javascript" src="testvm.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	
+	</head>
+
+	<body>
+		<p id ="header">Welcome to the recycle log<p>
+
+
+		<div id="container"data-bind="foreach:items">
+			<div>
+				The 
+				<span data-bind="text:item"></span> 
+				was recycled on 
+				<span data-bind="text:time"></span> 
+			</div>
+
+		</div>
+
+	<script>
+		//Declare var that references our VM
+		var model = new testvm();
+		
+		//Apply bindings to the VM
+		ko.applyBindings(model);
+	</script>
+	</body>
+
+
+
+
+
+</html>
